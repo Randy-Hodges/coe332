@@ -13,17 +13,17 @@ This file simulates a robot traveling to each randomly generated site from landi
 ## Running the code
 First generate_sites.py should be run by using the command 
 
-'''
+```
 python3 generate_sites.py
-'''
+```
 
 or by simply running generate_sites.py as an executable.
 
 After that, calculate_trip.py should be executed using 
 
-'''
+```
 python3 calculate_trip.py
-'''
+```
 
 or by running calculate_trip.py as an executable.
 The results of the simulation will be shown in the terminal.

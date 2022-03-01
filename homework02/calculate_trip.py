@@ -18,6 +18,7 @@ def calc_gcd(latitude_1: float, longitude_1: float, latitude_2: float, longitude
     d_sigma = math.acos( math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(abs(lon1-lon2)))
     return ( mars_radius * d_sigma )
 
+
 def run_robot_trip(sites: dict)-> None:
     '''Calculates a robot trip on mars given a list of sites'''
     sample_times = {

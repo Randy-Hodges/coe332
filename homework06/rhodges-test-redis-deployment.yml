@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rhodges-test-redis-deployment
+  labels:
+    env: test
+    username: rhodges
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+        env: test
+        username: rhodges
+  template:
+    metadata:
+      labels:
+        env: test
+        username: rhodges
+        app: rhodges-test-redis
+    spec:
+      containers:
+        - name: hellos
+          image: redis:6
+          volumeMounts:
+          - name: rhodges-redis-data
+            mountPath: "/data"
+      volumes:
+      - name: rhodges-redis-data
+        persistentVolumeClaim:
+          claimName: rhodges-redis-data

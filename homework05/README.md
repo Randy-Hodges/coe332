@@ -1,15 +1,6 @@
 # Sample Redis database with Flask app
 This homework is the creation of a flask app that interacts with a redis database. This is a great example of how to use a redis database and containerize a database and flask app.
 
-
-
-
-pip3 install --user redis
-docker pull redis:6
- docker run -d -p 6411:6379 --name=rhodges-redis redis:6
- docker run -d -p 6411:6379 -v $(pwd)/data:/data:rw --name=rhodges-redis redis:6 --save 1 1
- docker build -t rhodgesd/redis_app:hw05 .
- docker run -d -p 5011:5000 rhodgesd/redis_app:hw05
 ## Download the original data
 Before running or containerizing the app, it is important to download the orignal data and put it in the root folder of the docker container. This data contains the meteorite landings that are being analyzed. The data can be found here:
 ```

@@ -51,7 +51,7 @@ Run the following commands while in the directory of the dockerfile:
  ```
 The app should now be running.
 ## Interact with the app
-The app currently supports to routes, a GET and a POST for /data:
+The app currently support a GET and POST route for /data:
 ```
 curl localhost:5011/data
 curl -X POST localhost:5011/data

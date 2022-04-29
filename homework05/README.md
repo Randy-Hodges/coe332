@@ -35,14 +35,23 @@ Then run the following command:
 docker run -d -p 6411:6379 -v $(pwd)/data:/data:rw --name=rhodges-redis redis:6 --save 1 1
 ```
 Breaking down the above command:
+
 docker run | run a docker container
+
 -d | run it in the background
+
 -p 6411:6379 | specify the port to be used
+
 -v $(pwd)/data:/data | mount the container data (/data) to the local directory's data folder ($(pwd)/data)
+
 :rw | mount the data for reading and writing
+
 --name=rhodges-redis | name of the container
+
 redis:6 | docker image to be used for the redis server
+
 --save 1 1 | save the data every (1) seconds (the first 1) and have (1) backups (the second 1)
+
 ## Build an run the containerized flask app
 Run the following commands while in the directory of the dockerfile:
 ```

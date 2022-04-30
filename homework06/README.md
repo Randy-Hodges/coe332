@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Deployment of Flask App to Kubernetes
 This homework consists of the deployment of the flask app developed in homework 5 into kubernetes. This is a good example of deploying an app and database to kubernetes, as well as using persistent volume claims.
 
@@ -58,14 +56,3 @@ rd.set(<key>, <value>)
 rd.get(<key>)
 ```
 
-
-
-
-
-
-=======
-Yikes so this hw has become a wednesday task for me. It is what it is, my guy.
->>>>>>> 0cef3cd8113807487d95222cf6dab14c249e863c
-=======
-
->>>>>>> b3bb91daf1d1c27a87874a71441f6f9834594c56

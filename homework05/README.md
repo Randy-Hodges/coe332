@@ -52,7 +52,7 @@ redis:6 | docker image to be used for the redis server
 
 --save 1 1 | save the data every (1) seconds (the first 1) and have (1) backups (the second 1)
 
-## Build an run the containerized flask app
+## Build and run the containerized flask app
 Run the following commands while in the directory of the dockerfile:
 ```
  docker build -t rhodgesd/redis_app:hw05 .

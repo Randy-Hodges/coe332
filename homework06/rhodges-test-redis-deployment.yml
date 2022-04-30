@@ -26,6 +26,6 @@ spec:
           - name: rhodges-redis-data
             mountPath: "/data"
       volumes:
-      - name: rhodges-redis-data
+      - name: rhodges-redis-data 
         persistentVolumeClaim:
           claimName: rhodges-redis-data

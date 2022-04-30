@@ -5,6 +5,7 @@ metadata:
   labels:
     env: test
     username: rhodges
+spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: nfs

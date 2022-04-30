@@ -1,0 +1,57 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rhodges-test-flask-deployment
+  labels:
+    env: test
+    username: rhodges
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+        env: test
+        username: rhodges
+  template:
+    metadata:
+      labels:
+        env: test
+        username: rhodges
+        app: rhodges-test-flask
+    spec:
+      containers:
+        - name: flasks
+          image: rhodges:redis_app
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rhodges-test-flask-deployment
+  labels:
+    env: test
+    username: rhodges
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+        env: test
+        username: rhodges
+  template:
+    metadata:
+      labels:
+        env: test
+        username: rhodges
+        app: rhodges-test-flask
+    spec:
+      containers:
+        - name: flask-container
+          imagePullPolicy: Always
+          image: rhodgesd/redis_app:1.0
+          env:
+          - name: FLASK_APP
+            value: "app.py"
+          ports:
+          - name: http
+            containerPort: 5000
+          

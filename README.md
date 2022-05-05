@@ -1,2 +1,2 @@
-# Overview
-This repo contains all of the homework from the coe332 class from spring of 2022
+# COE332 Homework Repo
+This repo contains all of the homework from the coe332 class from spring of 2022.
